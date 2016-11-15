@@ -1,0 +1,198 @@
+html{
+    font-family: 'Nunito', sans-serif;
+}
+
+nav{
+    opacity: 0.8;   
+}
+
+.navbar-brand{
+    font-size: 30px!important;   
+}
+
+.navbar-default{
+    background-color: #ff4000!important;   
+    font-family: 'Nunito', sans-serif;
+}
+
+.navbar-default a{
+    color: white!important;   
+}
+
+.navbar-default .active a{
+    background-color: dimgrey!important;   
+}
+
+
+/*AJUSTA LOS PRIMEROS BOTONES EN EL CENTRO*/
+.navbar .navbar-nav { 
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+
+
+/*AJUSTA EN EL CENTRO LOS FORMS*/
+.centrar{/*EDIT*/
+    display: -webkit-inline-box!important;
+    float:none!important;
+}
+
+.navbar-input-group {
+  font-size: 0px; /*removes whitespace between button and input*/
+}
+
+.navbar-input-group input {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.navbar-input-group .btn {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-left: 0px;
+}
+
+.producto{
+    padding-right: 0!important;
+    padding-left:0!important;
+    border-radius: 25px; 
+    text-align: center; 
+    border: 4px solid;
+    border-color: lightgrey;
+}
+
+.producto:hover{
+    border: 2px solid;
+    border-color: #FF750B;
+      
+}
+
+.precio{
+       
+}
+.foto1 > img{
+    width:100%;  
+    border-radius: 22px 22px 0px 0px;
+}
+
+
+
+.titulo{
+    /*padding-bottom: 2%;*/
+}
+
+.info{
+    
+}
+
+.info > .precio{
+    /*display: table-cell;
+    vertical-align: middle;
+    width: 30%;
+    position: relative;
+    
+    background-color: green;
+    border-radius: 0px 10px 10px 23px;
+    margin: 0 10% 0 10%;*/
+}
+
+.info > .desc{
+    /*display: table-cell;
+    width: 69%;
+    position: relative;
+    padding-top: 4%;
+    padding-bottom: 2%; */  
+}
+
+.precio > p{
+    
+}
+
+/*poner en el centro los rows cuando se ve en ipad*/
+/*poner el width y margin-right especial de producto solo para pantallas normales*/    
+
+
+.shadow { 
+   color: #FF750B; 
+   font: bold 52px Helvetica, Arial, Sans-Serif;
+   text-shadow: 1px 1px white, 
+                2px 2px lightgrey, 
+                3px 3px lightgrey;
+   -webkit-transition: all 0.12s ease-out;
+   -moz-transition:    all 0.12s ease-out;
+   -ms-transition:     all 0.12s ease-out;
+   -o-transition:      all 0.12s ease-out;
+}
+
+
+
+
+
+/*MEDIA QUERIES*/
+@media(max-width:767px){
+    
+    /*AJUSTA LOS BOTONES CUANDO PULSAS EL TOGGLE*/
+    .navbar .navbar-nav {
+          margin: 0!important;
+    }
+    
+    /*AJUSTA EL TOGGLE PARA QUE DEJE MÁS ESPACIO A SU DERECHA*/
+    /*nota: sin !important no serviría*/
+    .navbar-toggle{
+        margin-right: 30px!important;   
+    }
+}
+
+/*AJUSTE SOLO TABLETS*/
+@media (min-width: 768px) and (max-width: 991px){ 
+    
+    .producto{
+        width: 44%!important;
+        margin-left: 4%!important;
+        margin-bottom: 5%;
+    }
+}
+
+
+/*AJUSTE SOLO PARA DESKTOP*/
+
+
+@media only screen and (min-width : 992px) {
+     .producto{
+        margin-right: 56px!important;
+        width:28%!important; 
+    }
+}
+
+/*Cuando se ve en pantallas de ipad con tres productos, se debe de ver en dos columnas.
+cuando hay tres productos por ejemplo, este se va a la derecha y sin margen superior (añadir margin-top: 5%;)
+Para ello habría que hacer un row cada dos productos en pantallas de ipad, y un row cada 3 productos en pantallas de desktop*/
+
+/*SOLUCIONADO: poniendo "<div class="clearfix visible-sm"></div>" despues de poner dos columnas*/
+
+
+
+
+
+/*.box1{
+    background-color: red; 
+     width: 25%; 
+    float:left;
+}
+
+.box2{
+    width: 50%;
+    background-color: yellow;
+    float:left;
+}
+
+.box3{
+    background-color: green;   
+     width: 25%; 
+    float:left;
+}*/
